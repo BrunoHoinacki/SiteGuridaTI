@@ -3,7 +3,7 @@
 <head>
   <title>Projetos - Minha Pagina de Tecnologia</title>
   <style>
-  /* Estilos gerais */
+    /* Estilos gerais */
 body {
   font-family: Arial, sans-serif;
   background-color: #0D0D0D;
@@ -27,14 +27,23 @@ a {
 header {
   background-color: #1B70A6;
   padding: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #44D2F2;
   margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -99,6 +108,9 @@ footer {
 </head>
 <body>
   <header>
+  <div class="logo">
+      <img src="fotos/logo.jpg" alt="Logo">
+    </div>
     <h1>Minha Pagina de Tecnologia</h1>
     <nav>
       <ul>

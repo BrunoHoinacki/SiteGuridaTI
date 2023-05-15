@@ -3,16 +3,16 @@
 <head>
   <title>Contato - Minha Pagina de Tecnologia</title>
   <style>
-  /* Estilos gerais */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #0D0D0D;
-  color: #FFF;
-  margin: 0;
-  padding: 0;
-}
+    /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0D0D0D;
+      color: #FFF;
+      margin: 0;
+      padding: 0;
+    }
 
-.container {
+    .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -27,14 +27,24 @@ a {
 header {
   background-color: #1B70A6;
   padding: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #44D2F2;
   margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left; /* Adicionado float para posicionar a logo à esquerda */
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -72,8 +82,8 @@ form {
   margin-top: 40px;
 }
 
-form input[type="text"], 
-form input[type="email"], 
+form input[type="text"],
+form input[type="email"],
 form textarea {
   width: 100%;
   padding: 10px;
@@ -109,6 +119,9 @@ footer {
 <body>
   <header>
     <h1>Minha Pagina de Tecnologia</h1>
+	<div class="logo">
+      <img src="fotos/logo.jpg" alt="Logo">
+    </div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
