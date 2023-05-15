@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Contato - Minha Pagina de Tecnologia</title>
+  <title>Minha Pagina de Tecnologia - Contato</title>
   <style>
-    /* Estilos gerais */
+  /* Estilos gerais */
     body {
       font-family: Arial, sans-serif;
       background-color: #0D0D0D;
@@ -13,98 +13,142 @@
     }
 
     .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    a {
+      color: #FFF;
+      text-decoration: none;
+    }
+
+    /* Estilos para o cabeçalho */
+    header {
+      background-color: #1B70A6;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: #44D2F2;
+      margin-right: 10px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .logo img {
+      width: 100%;
+      height: auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.2;
+      color: #FFF;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #FFF;
+      text-decoration: none;
+    }
+
+    /* Estilos para o conteúdo principal */
+    main {
+      padding: 20px;
+    }
+
+    /* Estilos específicos para a página de contato */
+    .contact-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contact-section h3 {
+      color: #F29441;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .contact-section p {
+      color: #FFF;
+      font-size: 18px;
+    }
+
+    .contact-section form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-section form label {
+      color: #FFF;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+
+    .contact-section form input,
+    .contact-section form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact-section form button {
+      background-color: #1B70A6;
+      color: #FFF;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact-links {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .contact-links h4 {
+      color: #F29441;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .contact-links ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+.contact-links ul li {
+  margin-bottom: 5px;
 }
 
-a {
+.contact-links ul li a {
   color: #FFF;
-  text-decoration: none;
-}
-
-/* Estilos para o cabeçalho */
-header {
-  background-color: #1B70A6;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: #44D2F2;
-  margin-right: 10px;
-  border-radius: 50%;
-  overflow: hidden;
-  float: left; /* Adicionado float para posicionar a logo à esquerda */
-}
-
-.logo img {
-  width: 100%;
-  height: auto;
-}
-
-h1 {
-  margin: 0;
-  font-size: 24px;
-  line-height: 1.2;
-  color: #FFF;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #FFF;
-  text-decoration: none;
-}
-
-/* Estilos para o conteúdo principal */
-main {
-  padding: 20px;
-}
-
-/* Estilos para o formulário de contato */
-form {
-  margin-top: 40px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  background-color: #1B70A6;
-  color: #FFF;
-  font-size: 16px;
-}
-
-form textarea {
-  height: 200px;
-}
-
-form input[type="submit"] {
-  background-color: #44D2F2;
-  color: #FFF;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
 }
 
 /* Estilos para o rodapé */
@@ -118,10 +162,10 @@ footer {
 </head>
 <body>
   <header>
-    <h1>Minha Pagina de Tecnologia</h1>
-	<div class="logo">
+    <div class="logo">
       <img src="fotos/logo.jpg" alt="Logo">
     </div>
+    <h1>Minha Pagina de Tecnologia</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -132,20 +176,33 @@ footer {
   </header>
   
   <main>
-    <h2>Entre em Contato</h2>
-    
-    <form>
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" required>
+        
+    <section class="contact-section">
+      <h3>Entre em contato</h3>
+      <p>Preencha o formulario abaixo ou utilize os links de contato:</p>
       
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
+      <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Enviar Mensagem</button>
+      </form>
       
-      <label for="message">Mensagem:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-      
-      <input type="submit" value="Enviar">
-    </form>
+      <div class="contact-links">
+        <h4>Outros meios de contato:</h4>
+        <ul>
+          <li>Email: <a href="brunohoinackib@gmail.com">brunihoinackib@gmail.com</a></li>
+          <li>Telefone: <a href="+55 51 998266914">+55 51 998266914</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/bruno-hoinacki-035134175/">Perfil no LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
   </main>
   
   <footer>
