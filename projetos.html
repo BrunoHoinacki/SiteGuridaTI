@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Guri da TI</title>
-  <style>
-    /* Estilos gerais */
+	<!DOCTYPE html>
+	<html>
+	<head>
+	  <title>Guri da TI</title>
+	  <meta charset="UTF-8">
+	  <style>
+		/* Estilos gerais */
     body {
       font-family: Arial, sans-serif;
       background-color: #0D0D0D;
@@ -77,24 +78,44 @@
       padding: 20px;
     }
 
-    /* Estilos específicos para a página de projetos */
-    .project {
+    /* Estilos específicos para a página inicial */
+    .hero-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .hero-section h2 {
+      color: #F29441;
+      font-size: 36px;
       margin-bottom: 20px;
     }
 
-    .project img {
-      width: 100%;
-      max-width: 400px;
+    .hero-section p {
+      color: #FFF;
+      font-size: 18px;
     }
 
-    .project h3 {
-      margin-top: 10px;
-      font-size: 20px;
-      color: #F29441;
+    .feature-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
-    .project p {
-      margin-top: 5px;
+    .feature-section .feature-box {
+      width: 300px;
+      padding: 20px;
+      background-color: #1B70A6;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .feature-section .feature-box h3 {
+      color: #FFF;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .feature-section .feature-box p {
       color: #FFF;
     }
 
@@ -105,43 +126,69 @@
       color: #FFF;
       text-align: center;
     }
-  </style>
-</head>
-<body>
-  <header>
-  <div class="logo">
-      <img src="fotos/logo.jpg" alt="Logo">
-    </div>
-    <h1>Minha Pagina de Tecnologia</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-    <h2>Projetos Gráficos de Clientes</h2>
-    
-    <div class="project">
-      <img src="caminho/para/imagem1.jpg" alt="Projeto 1">
-      <h3>Projeto 1</h3>
-      <p>Descrição do Projeto 1.</p>
-    </div>
-    
-    <div class="project">
-      <img src="caminho/para/imagem2.jpg" alt="Projeto 2">
-      <h3>Projeto 2</h3>
-      <p>Descrição do Projeto 2.</p>
-    </div>
-    
-    <!-- Adicione mais projetos conforme necessário -->
-  </main>
-  
-  <footer>
-    <p>&copy; 2023 Minha Pagina de Tecnologia. Todos os direitos reservados.</p>
-  </footer>
-</body>
-</html>
+
+    /* Estilos específicos para a página do Guri da TI */
+    .project {
+      margin-bottom: 40px;
+    }
+
+    .center-image {
+      text-align: center;
+    }
+
+    .project img {
+      max-width: 100%;
+      height: 500px;
+    }
+
+    .project h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #dd9512;
+    }
+
+    .project p {
+      color: #FFF;
+    }
+	  </style>
+	</head>
+	<body>
+	  <header>
+		<div class="logo">
+		  <img src="fotos/logo.jpg" alt="Logo">
+		</div>
+		<h1>Guri da TI</h1>
+		<nav>
+		  <ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="projetos.html">Projetos</a></li>
+			<li><a href="contato.html">Contato</a></li>
+		  </ul>
+		</nav>
+	  </header>
+	  
+	  <main>
+		<h2>Projetos Gráficos de Clientes</h2>
+		
+		<div class="project">
+		  <h3>Alemão Conveniência</h3>
+		  <div class="center-image">
+			<img src="C:\Users\bruno\OneDrive\Documentos\Projetos\SiteGuridaTI\fotos\alemaoconveniencia/instaalemao.jpg" alt="Alemao Conveniencia">
+		  </div>
+		<p>Neste projeto, criei uma página no Instagram, Facebook, iFood e um site para a minha conveniencia localizada em minha casa.</p>
+		</div>
+		<div class="project">
+		  <h3>Guri da TI</h3>
+		  <div class="center-image">
+			<img src="C:\Users\bruno\OneDrive\Documentos\Projetos\SiteGuridaTI\fotos\alemaoconveniencia/instaalemao.jpg" alt="Alemao Conveniencia">
+		  </div>
+		<p>Neste projeto, criei uma página no Instagram, Facebook, TikTok youtube e um site para meu perfil de programador e designer gráfico.</p>
+		</div>
+
+	<!-- Adicione mais projetos conforme necessário -->
+	</main>
+	  <footer>
+		<p>&copy; 2023 Minha Página de Tecnologia. Todos os direitos reservados.</p>
+	  </footer>
+	</body>
+	</html>
